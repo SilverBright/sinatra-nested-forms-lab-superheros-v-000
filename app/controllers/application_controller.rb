@@ -1,7 +1,5 @@
 require 'sinatra/base'
 
-crequire 'sinatra/base'
-
 class App < Sinatra::Base
 
     set :views, Proc.new { File.join(root, "../views/") }
@@ -17,6 +15,6 @@ class App < Sinatra::Base
 
       erb :team
     end
-  end
+
 
 end
